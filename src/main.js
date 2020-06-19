@@ -8,7 +8,8 @@ import router from './router'
 import {Button, Form, FormItem, Input, Message,
   Header, Main, Aside, Container, Menu, Submenu,
   MenuItemGroup, MenuItem, BreadcrumbItem, Breadcrumb,
-  Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog} from 'element-ui'
+  Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination,
+  Dialog, Tag, MessageBox, Tree, Select, Option} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 // import './plugins/element.js'
 // 导入全局样式表
@@ -17,6 +18,7 @@ import axios from 'axios'
 
 // 把message挂载到vue原型对象上
 Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox
 // 配置axios请求的跟路径
 axios.defaults.baseURL = `http://localhost:8888/api/private/v1/`
 
@@ -55,6 +57,10 @@ Vue.use(Switch)
 Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
