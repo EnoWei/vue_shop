@@ -9,8 +9,9 @@ import {Button, Form, FormItem, Input, Message,
   Header, Main, Aside, Container, Menu, Submenu,
   MenuItemGroup, MenuItem, BreadcrumbItem, Breadcrumb,
   Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination,
-  Dialog, Tag, MessageBox, Tree, Select, Option} from 'element-ui'
+  Dialog, Tag, MessageBox, Tree, Select, Option, Cascader} from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import TreeTable from 'vue-table-with-tree-grid'
 // import './plugins/element.js'
 // 导入全局样式表
 import './assets/css/common.css'
@@ -61,6 +62,8 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
+Vue.component('tree-table', TreeTable)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
