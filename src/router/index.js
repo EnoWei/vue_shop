@@ -7,6 +7,8 @@ import User from '@/components/user/user.vue'
 import Rights from '@/components/power/rights.vue'
 import Roles from '@/components/power/roles.vue'
 import Cate from '@/components/goods/Cate.vue'
+import Params from '@/components/goods/Params.vue'
+import Goods from '@/components/goods/Goods.vue'
 
 Vue.use(Router)
 // 解决ElementUI导航栏中的vue-router在3.0版本以上重复点菜单报错问题
@@ -29,7 +31,9 @@ const router = new Router({
         {path: '/users', component: User},
         {path: '/rights', component: Rights},
         {path: '/roles', component: Roles},
-        {path: '/categories', component: Cate}
+        {path: '/categories', component: Cate},
+        {path: '/params', component: Params},
+        {path: '/goods', component: Goods}
       ]
     }
   ]
